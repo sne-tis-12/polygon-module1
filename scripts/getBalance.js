@@ -14,7 +14,7 @@ const walletAddress = ""; // place your public address for your wallet here
 async function main() {
 
     const token = await hre.ethers.getContractAt(tokenABI, tokenAddress);
-    console.log(walletAddress + "now has: " + await token.balanceOf(walletAddress) + " NFT");
+    console.log("You now have: " + await token.balanceOf(walletAddress) + " NFTs");
   }
   
   // We recommend this pattern to be able to use async/await everywhere
