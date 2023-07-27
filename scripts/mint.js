@@ -19,7 +19,7 @@ async function main() {
     const tx = await token.mint(walletAddress, 5);
     await tx.wait();
 
-    console.log(walletAddress +" now have: " + await token.balanceOf(walletAddress) + " NFTs");
+    console.log("You now have minted: " + await token.balanceOf(walletAddress) + " NFTs");
   }
   
   // We recommend this pattern to be able to use async/await everywhere
